@@ -11,10 +11,14 @@ const App = () => {
 
     return (
         <div className={classNames('app', {}, [theme])}>
+
             <button onClick={toggleTheme}>TOGGLE</button>
+
             <Link to={'/'}>Главная</Link>
             <Link to={'/about'}>О сайте</Link>
+
             <AppRouter/>
+            
         </div>
     );
 };
